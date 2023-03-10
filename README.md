@@ -85,7 +85,7 @@ ___
 - It’s also very cost-effective, more responsive than earlier models, and remembers the context of the conversation. As for the user interface, we are using Gradio to create a simple web interface that will be available both locally and on the web.  
 - Setup:
     1. First, open Notepad++ (or your choice of code editor) and paste the below code. 
-    import openai
+ ```import openai
     import gradio as gr
 
     openai.api_key = "Your API key"
@@ -110,7 +110,8 @@ ___
     gr.Interface(fn=chatbot, inputs=inputs, outputs=outputs, title="AI Chatbot",
                  description="Ask anything you want",
                  theme="compact").launch(share=True)
-                 
+                 ```
+     <br>          
     2. This is how it looks in the code editor. Make sure to replace the “Your API key” text with your own API key generated above. That’s the only change you have to make. 
     3. Next, click on “File” in the top menu and select “Save As…” from the drop-down menu.  
     4. After that, set the file name as “app.py” and change “Save as type” to “All types” from the drop-down menu. Then, save the file to an easily-accessible location like the Desktop. You can change the name to your preference, but make sure .py is appended.
@@ -131,9 +132,9 @@ ___
 - Setup:
     1. Right-click on the “app.py” file and choose “Edit with Notepad++“. 
     2. Here, make changes to this particular code only. Simply feed the information to the AI to assume that role. Now, save the file by pressing “Ctrl + S”.
-    messages = [
+ ```   messages = [
     {"role": "system", "content": "You are an AI specialized in Food. Do not answer anything other than food-related queries."},
-]
+]```
 3. Open Terminal and run the “app.py” file in a similar fashion as you did above. You will get a local and public URL. Copy the local URL. If a server is already running, press “Ctrl + C” to stop it. And then restart the server again. You will have to restart the server after every change you make to the “app.py” file. 
 python "C:\Users\mearj\Desktop\app.py"
 4.  Open the local URL in the web browser and you will get a personalized AI chatbot that only answers food-related queries. That’s it. You can create a Doctor AI, an AI that replies like Shakespeare, which talks in morse code, anything you wish. 
