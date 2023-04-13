@@ -4,7 +4,7 @@
 
 Welcome to the AI Chatbot repository! This project is a demonstration of how AI Chatbot and ChatGPT can be used together to create a sophisticated and dynamic AI Chatbot.
 
-> :warning: Disclaimer: Just kidding feel free to use it as per your comfort.
+> :warning: Disclaimer: Just kidding feel free to use 
 
 [![step9.jpg](https://i.postimg.cc/NFX1c9DR/step9.jpg)](https://postimg.cc/D42WQztz)
 
